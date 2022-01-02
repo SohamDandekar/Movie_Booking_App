@@ -1,0 +1,24 @@
+.heading{
+    background-color: #ff9999;
+    padding: 8px;
+    text-align: center;
+    font-size: 1rem;
+    display: block;
+}
+
+.flex-container{
+    display: flex;
+}
+/* Released Movies Section */
+.left{
+    width: 76%;
+    margin: 16px;
+}
+/* Filter Section */
+.right{
+    width: 24%;
+    margin: 16px;
+}
+img:hover{
+    cursor: pointer;
+}
