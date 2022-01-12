@@ -22,3 +22,16 @@
 img:hover{
     cursor: pointer;
 }
+/* for Card label */
+.css-1qvr50w-MuiTypography-root {
+    font-size: 20px !important;
+}
+/* Card content */
+.css-46bh2p-MuiCardContent-root {
+    padding: 25px !important;
+}
+/* Apply button */
+.css-1xxzv2w-MuiButtonBase-root-MuiButton-root {
+    background-color: #3452B4 !important;
+    margin-top: 25px !important;
+}

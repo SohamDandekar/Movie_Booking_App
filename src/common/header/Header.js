@@ -14,7 +14,7 @@ export class Header extends Component {
           x="0px"
           y="0px"
           viewBox="0 0 512 512"
-          enable-background="new 0 0 512 512"
+          enableBackground="new 0 0 512 512"
         >
           <path
             d="M352,255.5l-192,96v-192L352,255.5z M512,31.5v448H0v-448H512z M320,95.5h64v-32h-64V95.5z M224,95.5h64v-32h-64V95.5z
