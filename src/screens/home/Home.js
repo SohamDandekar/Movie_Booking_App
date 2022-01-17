@@ -22,6 +22,8 @@ import Checkbox from "@mui/material/Checkbox";
 import genres from "../../common/genre";
 import artists from "../../common/artists";
 import TextField from "@mui/material/TextField";
+import { Link } from "react-router-dom";
+
 
 const flexContainer = {
   flexWrap: "nowrap",
@@ -149,12 +151,12 @@ class Home extends Component {
     const { classes } = this.props;
     return (
       <div>
-        <Header />
+        <Header pageName="Home"/>
         <span className="heading">Upcoming Movies</span>
         <ImageList style={flexContainer} cols={6} rowHeight={250}>
           {this.state.moviesData.map((item) => (
             <ImageListItem className="imageListItem" key={item.id}>
-              <img src={item.poster_url} alt="movie image" />
+              <Link to={{pathname: `/details/${item.id}`}}><img src={item.poster_url} alt="movie image" /></Link>
               <ImageListItemBar title={item.title} />
             </ImageListItem>
           ))}
@@ -164,7 +166,7 @@ class Home extends Component {
             <ImageList cols={4} rowHeight={350} gap={20}>
               {this.state.moviesData.map((item) => (
                 <ImageListItem key={item.id}>
-                  <img src={item.poster_url} alt="movie image" />
+                  <Link to={{pathname: `/details/${item.id}`}}><img src={item.poster_url} alt="movie image" /></Link>
                   <ImageListItemBar
                     title={item.title}
                     subtitle={

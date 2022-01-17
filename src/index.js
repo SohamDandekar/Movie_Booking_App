@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { Header } from "./common/header/Header"
 import Home from './screens/home/Home';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Details } from './screens/details/Details';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+      <Routes>
+        <Route exact path="/" element = {<Home />}></Route>
+        <Route exact path="/details/:movieId" element = {<Details />}></Route>
+      </Routes>
+    </React.StrictMode>
+  </Router>,
   document.getElementById('root')
 );
 
